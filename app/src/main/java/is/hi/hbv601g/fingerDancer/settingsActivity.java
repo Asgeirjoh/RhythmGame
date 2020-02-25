@@ -1,5 +1,6 @@
 package is.hi.hbv601g.fingerDancer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -12,6 +13,11 @@ public class settingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+    }
+
+    public void viewInstructions(View v) {
+        setContentView(R.layout.activity_instructions);
+
     }
 
 
