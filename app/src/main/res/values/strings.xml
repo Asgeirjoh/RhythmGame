@@ -32,4 +32,8 @@
     <string name="strScore">Score</string>
     <string name="strRank">Rank</string>
     <string name="strLevel">Level</string>
+
+    <!-- Strings for Instructions-->
+    <string name="strInstructions">How to play</string>
+
 </resources>
