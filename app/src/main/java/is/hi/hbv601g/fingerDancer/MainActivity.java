@@ -19,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
     private int sound8;
     private int sound9;
 
+    private int track;
+    private int score;
+    private int combo;
+    private int difficulty;
+    private int fadeInTime;
+
+
 
 
     @Override
@@ -34,10 +41,9 @@ public class MainActivity extends AppCompatActivity {
         sound7 = sp.load(getApplicationContext(),R.raw.sound7,1);
         sound8 = sp.load(getApplicationContext(),R.raw.sound8,1);
         sound9 = sp.load(getApplicationContext(),R.raw.sound9,1);
-
-
-
     }
+
+
 
     public void backToMenu(View v){
         Intent i = new Intent(this,MenuActivity.class);
