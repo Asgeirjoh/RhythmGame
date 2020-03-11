@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="is.hi.hbv601g.fingerDancer">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <supports-screens
         android:largeScreens="true"
         android:normalScreens="true"
@@ -10,6 +11,7 @@
     </supports-screens>
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
