@@ -1,22 +1,21 @@
 package is.hi.hbv601g.fingerDancer;
 
+import java.util.ArrayList;
+
 public class Track {
 
     private String name;
     private int id;
     private int length;
     private Double bpm;
-    private Note[] note;
+    private ArrayList<Integer> notes;
     private int offset;
+    private String filePath;
 
-
-    public Track(String name, int id, int length, Double bpm, Note[] note, int offset) {
+    public Track(String name, Double bpm, String filePath) {
         this.name = name;
-        this.id = id;
-        this.length = length;
         this.bpm = bpm;
-        this.note = note;
-        this.offset = offset;
+        this.filePath = filePath;
     }
 
     public String getName() {
@@ -51,12 +50,12 @@ public class Track {
         this.bpm = bpm;
     }
 
-    public Note[] getNote() {
-        return note;
+    public ArrayList<Integer> getNotes() {
+        return notes;
     }
 
-    public void setNote(Note[] note) {
-        this.note = note;
+    public void setNotes(ArrayList<Integer> notes) {
+        this.notes = notes;
     }
 
     public int getOffset() {
@@ -65,5 +64,13 @@ public class Track {
 
     public void setOffset(int offset) {
         this.offset = offset;
+    }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
     }
 }

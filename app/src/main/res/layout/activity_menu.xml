@@ -24,7 +24,7 @@
             android:layout_height="50dp"
             android:layout_margin="15dp"
             android:background="@drawable/menubuttons"
-            android:onClick="playGame"
+            android:onClick="openMainActivity"
             android:text="@string/btnPlay"
             android:textColor="@color/colorPrimary"
 
