@@ -17,6 +17,11 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
     }
 
+    // Open activity_instructions.xml
+    public void viewInstructions(View v) {
+        setContentView(R.layout.activity_instructions);
+    }
+
     // Mute checkbox
      public void onMute(View v) {
          boolean checked = ((CheckBox) v).isChecked();
