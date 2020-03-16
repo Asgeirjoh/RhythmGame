@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grayEndColor"
-    tools:context=".HighscoreActivity">
+    tools:context=".Activities.HighscoreActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

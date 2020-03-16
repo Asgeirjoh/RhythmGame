@@ -1,4 +1,4 @@
-package is.hi.hbv601g.fingerDancer;
+package is.hi.hbv601g.fingerDancer.Activities;
 
 import android.content.Intent;
 import android.media.AudioManager;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import is.hi.hbv601g.fingerDancer.R;
 
 public class MainActivity extends AppCompatActivity {
     private SoundPool sp;
@@ -44,11 +46,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    // Return to Main Menu
     public void backToMenu(View v){
         Intent i = new Intent(this,MenuActivity.class);
         startActivity(i);
     }
+
+    // Sounds to play when you press the Note buttons
+    // For testing
 
     public void playsound1(View v){
         sp.play(sound1,1.0f,1.0f,1,1,10f);

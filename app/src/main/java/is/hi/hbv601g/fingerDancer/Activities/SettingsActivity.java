@@ -1,4 +1,4 @@
-package is.hi.hbv601g.fingerDancer;
+package is.hi.hbv601g.fingerDancer.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,9 @@ import android.widget.CheckBox;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class settingsActivity extends AppCompatActivity {
+import is.hi.hbv601g.fingerDancer.R;
+
+public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,16 +17,15 @@ public class settingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
     }
 
+    // Open activity_instructions.xml
     public void viewInstructions(View v) {
         setContentView(R.layout.activity_instructions);
-
     }
 
+    // Mute checkbox
+     public void onMute(View v) {
+         boolean checked = ((CheckBox) v).isChecked();
+     }
 
-
- public void onMute(View v){
-        boolean checked = ((CheckBox) v).isChecked();
-
-        }
-    }
+}
 
