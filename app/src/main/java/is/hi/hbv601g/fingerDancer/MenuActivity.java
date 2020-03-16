@@ -22,6 +22,7 @@ public class MenuActivity extends AppCompatActivity {
 
     private Retrofit retrofit;
     private RetrofitInterface retrofitInterface;
+    // BASE_URL Leads to local host on computer
     private String BASE_URL = "http://10.0.2.2:3000";
     private Button btnLogin;
     private Button btnSignup;
@@ -53,6 +54,7 @@ public class MenuActivity extends AppCompatActivity {
         btnSignup = (Button) findViewById(R.id.btnSignup);
 
 
+        // Login Button btnLogin: calls handleLoginDialog()
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,6 +62,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+        // Sign up Button: btnSignup calls handleSignupDialog()
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +72,7 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+    // Opens Login Dialog and sends login information to server to check if user exists
     private void handleLoginDialog() {
         View view = getLayoutInflater().inflate(R.layout.login_dialog, null);
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -86,7 +90,9 @@ public class MenuActivity extends AppCompatActivity {
                 Call<User> call = retrofitInterface.executeLogin(map);
                 call.enqueue(new Callback<User>() {
                     @Override
+                    // Response if http request is successful
                     public void onResponse(Call<User> call, Response<User> response) {
+                        // Returns User info when Login info is correct
                         if (response.code() == 200) {
                             User results = response.body();
                             AlertDialog.Builder builder1 = new AlertDialog.Builder(MenuActivity.this);
@@ -94,12 +100,14 @@ public class MenuActivity extends AppCompatActivity {
                             builder1.setMessage(results.getEmail());
                             builder1.show();
                         }
+                        // Returns Toast message if Login info is wrong
                         else if (response.code() == 404) {
                             Toast.makeText(MenuActivity.this,
                                     "Wrong Login info", Toast.LENGTH_LONG).show();
                         }
                     }
 
+                    // Returns error Toast message when http request fails
                     @Override
                     public void onFailure(Call<User> call, Throwable t) {
                         Toast.makeText(MenuActivity.this, t.getMessage(),
@@ -110,6 +118,7 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
 
+    // Opens Sign Up dialog and sends inserted user information to server
     private void handleSignupDialog() {
         View view = getLayoutInflater().inflate(R.layout.signup_dialog, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -129,16 +138,19 @@ public class MenuActivity extends AppCompatActivity {
                 call.enqueue(new Callback<Void>() {
                     @Override
                     public void onResponse(Call<Void> call, Response<Void> response) {
+                        // Return Toast message when new User is created
                         if (response.code() == 200) {
                             Toast.makeText(MenuActivity.this,
                                     "Signed up succesfully", Toast.LENGTH_LONG).show();
                         }
+                        // Return Toast message when User already exists
                         else if (response.code() == 400) {
                             Toast.makeText(MenuActivity.this,
                                     "User already exists", Toast.LENGTH_LONG).show();
                         }
                     }
 
+                    // Returns error Toast message when http request fails
                     @Override
                     public void onFailure(Call<Void> call, Throwable t) {
                         Toast.makeText(MenuActivity.this, t.getMessage(),
@@ -149,23 +161,24 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
 
+    // Starts MainActivity, function called by Play Button: btnPlay in activity_menu.xml
     public void playGame(View v) {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
 
     }
 
+    // Starts SettingsActivity, function called by Settings Button: btnSettings in activity_menu.xml
     public void viewSettings(View v) {
-        Intent i = new Intent(this, settingsActivity.class);
+        Intent i = new Intent(this, SettingsActivity.class);
         startActivity(i);
     }
 
-    public void viewHighScore(View v){
+    // Starts HighscoreActivity, function called by High Score Button: btnHighScore in activity_menu.xml
+    public void viewHighScore(View v) {
         Intent i = new Intent(this,HighscoreActivity.class);
         startActivity(i);
     }
-
-
 
     }
 

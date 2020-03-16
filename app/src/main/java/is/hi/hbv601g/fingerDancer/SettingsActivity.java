@@ -7,7 +7,7 @@ import android.widget.CheckBox;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class settingsActivity extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,16 +15,10 @@ public class settingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
     }
 
-    public void viewInstructions(View v) {
-        setContentView(R.layout.activity_instructions);
+    // Mute checkbox
+     public void onMute(View v) {
+         boolean checked = ((CheckBox) v).isChecked();
+     }
 
-    }
-
-
-
- public void onMute(View v){
-        boolean checked = ((CheckBox) v).isChecked();
-
-        }
-    }
+}
 

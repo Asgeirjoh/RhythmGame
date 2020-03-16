@@ -44,11 +44,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    // Return to Main Menu
     public void backToMenu(View v){
         Intent i = new Intent(this,MenuActivity.class);
         startActivity(i);
     }
+
+    // Experimental sounds to play when you press the Note buttons
 
     public void playsound1(View v){
         sp.play(sound1,1.0f,1.0f,1,1,10f);
