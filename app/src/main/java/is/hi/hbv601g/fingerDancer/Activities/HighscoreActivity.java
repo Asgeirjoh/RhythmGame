@@ -1,8 +1,10 @@
-package is.hi.hbv601g.fingerDancer;
+package is.hi.hbv601g.fingerDancer.Activities;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import is.hi.hbv601g.fingerDancer.R;
 
 public class HighscoreActivity extends AppCompatActivity {
 

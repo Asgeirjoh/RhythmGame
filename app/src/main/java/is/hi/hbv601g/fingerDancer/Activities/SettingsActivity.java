@@ -1,4 +1,4 @@
-package is.hi.hbv601g.fingerDancer;
+package is.hi.hbv601g.fingerDancer.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.CheckBox;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import is.hi.hbv601g.fingerDancer.R;
 
 public class SettingsActivity extends AppCompatActivity {
 

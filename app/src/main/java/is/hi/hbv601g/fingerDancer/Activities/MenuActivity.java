@@ -1,4 +1,4 @@
-package is.hi.hbv601g.fingerDancer;
+package is.hi.hbv601g.fingerDancer.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
 
+import is.hi.hbv601g.fingerDancer.R;
+import is.hi.hbv601g.fingerDancer.Services.RetrofitInterface;
+import is.hi.hbv601g.fingerDancer.Entities.User;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:weightSum="100"
-    tools:context=".MainActivity">
+    tools:context=".Activities.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
