@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private int fadeInTime;
     private NoteButton buttons[] = new NoteButton[12];
 
-    //track = new Track("Another Day", 198, r.raw.song1);
+    track = new Track("Another Day", 198, r.raw.song1);
 
 
 
@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         score = 0;
         combo = 0;
         difficulty = 1;
+
 
     }
 
