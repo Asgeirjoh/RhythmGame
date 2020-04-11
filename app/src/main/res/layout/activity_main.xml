@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="#222"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
@@ -21,6 +21,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="32dp"
+            android:background="#999"
             android:onClick="backToMenu"
             android:text="@string/backtoMenu"
             app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
@@ -47,7 +48,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound1" />
 
                 <Button
@@ -56,7 +57,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="tapOnButton"
                     android:radius="20dp" />
 
@@ -66,7 +67,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound3" />
             </TableRow>
 
@@ -81,7 +82,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound1" />
 
                 <Button
@@ -90,7 +91,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound2" />
 
                 <Button
@@ -99,7 +100,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound3" />
             </TableRow>
 
@@ -114,7 +115,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound1" />
 
                 <Button
@@ -123,7 +124,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound2" />
 
                 <Button
@@ -132,7 +133,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound3" />
             </TableRow>
 
@@ -147,7 +148,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound1" />
 
                 <Button
@@ -156,7 +157,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound2" />
 
                 <Button
@@ -165,7 +166,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#AAA"
+                    android:background="#333"
                     android:onClick="playsound3" />
             </TableRow>
         </TableLayout>

@@ -1,14 +1,12 @@
 package is.hi.hbv601g.fingerDancer;
 
-import java.util.ArrayList;
-
 public class Track {
 
     private String name;
     private int id;
     private int length;
     private Double bpm;
-    private ArrayList<Integer> notes;
+    private int[] notes;
     private int offset;
     private String filePath;
 
@@ -50,11 +48,11 @@ public class Track {
         this.bpm = bpm;
     }
 
-    public ArrayList<Integer> getNotes() {
+    public int[] getNotes() {
         return notes;
     }
 
-    public void setNotes(ArrayList<Integer> notes) {
+    public void setNotes(int[] notes) {
         this.notes = notes;
     }
 

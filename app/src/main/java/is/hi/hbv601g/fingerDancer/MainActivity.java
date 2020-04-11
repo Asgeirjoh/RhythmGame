@@ -7,17 +7,24 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import java.util.ArrayList;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
+
+import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
     private MediaPlayer mediaplayer;
@@ -31,16 +38,20 @@ public class MainActivity extends AppCompatActivity {
     private int sound7;
     private int sound8;
     private int sound9;
+    private int sound9x2;
 
-    private Track track;
     private int score;
     private int combo;
     private int difficulty;
     private int hitTime;
     private int fadeInTime;
     private NoteButton buttons[] = new NoteButton[12];
-
-    track = new Track("Another Day", 198, r.raw.song1);
+    private Track track = new Track("Another Day", 99.0, "r.raw.song1");
+    private Timer timer = new Timer(false);
+    private Timer timer2;
+    private boolean timer2Cancel = false;
+    int[] notes = {1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,1,1,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,1,0};
+    //int[] notes = new int[1340];
 
 
 
@@ -60,14 +71,27 @@ public class MainActivity extends AppCompatActivity {
         sound7 = sp.load(getApplicationContext(),R.raw.sound7,1);
         sound8 = sp.load(getApplicationContext(),R.raw.sound8,1);
         sound9 = sp.load(getApplicationContext(),R.raw.sound9,1);
+        sound9x2 = sp.load(getApplicationContext(),R.raw.sound9,1);
         mediaplayer = MediaPlayer.create(this, R.raw.song1);
+
+        int lastNote = 0;
+        for (int i=0; i<notes.length; i++) {
+            if (notes[i] == 1) {
+                notes[i] = (int)(Math.random()*12) + 1;
+                while (notes[i] == lastNote) {
+                    notes[i] = (int)(Math.random()*12) + 1;
+                }
+                lastNote = notes[i];
+            }
+        }
+
 
         final Button button2 = (Button) findViewById(R.id.button2);
         button2.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN ) {
-                    sp.play(sound1,1.0f,1.0f,1,1,10f);
+                    sp.play(sound1,1.0f,1.0f,1,1,1);
                     Animation animation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.fade);
                     button2.startAnimation(animation);
                     return true;
@@ -88,10 +112,74 @@ public class MainActivity extends AppCompatActivity {
         combo = 0;
         difficulty = 1;
 
-
+        final Handler handler = new Handler();
+        TimerTask timerTask = new TimerTask() {
+            int i = -8;
+            @Override
+            public void run() {
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        timer2 = new Timer(false);
+                        final Handler handler2 = new Handler();
+                        final TimerTask timerTask2 = new TimerTask() {
+                            int j = 0;
+                            @Override
+                            public void run() {
+                                handler2.post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        if (i < 0) {
+                                            if (j % 2 == 0) {
+                                                sp.play(sound9,0.1f,0.1f,2,0,1);
+                                            }
+                                        }
+                                        else if (notes[i] != 0) {
+                                            if (i % 2 == 0) {
+                                                sp.play(sound9, 0.5f, 0.5f, 1, 0, 1);
+                                            }
+                                            else {
+                                                sp.play(sound9x2, 0.5f, 0.5f, 1, 0, 1);
+                                            }
+                                            Button button;
+                                            if (notes[i] == 1) button = findViewById(R.id.button1);
+                                            else if (notes[i] == 2) button = findViewById(R.id.button2);
+                                            else if (notes[i] == 3) button = findViewById(R.id.button3);
+                                            else if (notes[i] == 4) button = findViewById(R.id.button4);
+                                            else if (notes[i] == 5) button = findViewById(R.id.button5);
+                                            else if (notes[i] == 6) button = findViewById(R.id.button6);
+                                            else if (notes[i] == 7) button = findViewById(R.id.button7);
+                                            else if (notes[i] == 8) button = findViewById(R.id.button8);
+                                            else if (notes[i] == 9) button = findViewById(R.id.button9);
+                                            else if (notes[i] == 10) button = findViewById(R.id.button10);
+                                            else if (notes[i] == 11) button = findViewById(R.id.button11);
+                                            else button = findViewById(R.id.button12);
+                                            Animation animation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.fade);
+                                            button.startAnimation(animation);
+                                        }
+                                        if (j % 4 == 0 && i >= 0) {
+                                            sp.play(sound8,0.5f,0.5f,2,0,1);
+                                        }
+                                        i++;
+                                        j++;
+                                        if (j == 16 || timer2Cancel) {
+                                            timer2.cancel();
+                                        }
+                                    }
+                                });
+                            }
+                        };
+                        timer2.scheduleAtFixedRate(timerTask2, 0, (Math.round(60*1000/4 / track.getBpm())));
+                    }
+                });
+            }
+        };
+        track.setOffset(5070);
+        long offset = track.getOffset() - Math.round((60*1000*2 / track.getBpm()));
+        System.out.println(offset);
+        long period = Math.round(60*1000*4 / track.getBpm());
+        timer.scheduleAtFixedRate(timerTask, offset, period);
     }
-
-
 
 
 
@@ -100,7 +188,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void backToMenu(View v){
+    public void backToMenu(View v) {
+        mediaplayer.stop();
+        timer2Cancel = true;
+        timer.cancel();
+        Intent i = new Intent(this,MenuActivity.class);
+        startActivity(i);
+    }
+
+    @Override
+    public void onBackPressed() {
+        mediaplayer.stop();
+        timer2Cancel = true;
+        timer.cancel();
         Intent i = new Intent(this,MenuActivity.class);
         startActivity(i);
     }
