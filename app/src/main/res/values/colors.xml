@@ -9,23 +9,23 @@
     <color name="blueEndColor">#0A7AD3</color>
 
     <!--  Orange Style Gradient-->
-    <color name="orangeStartColor">#feed64</color>
-    <color name="orangeEndColor">#dda660</color>
+    <color name="orangeStartColor">#FFF394</color>
+    <color name="orangeEndColor">#FFF306</color>
 
     <!--  Ping Style Gradient-->
-    <color name="pinkStartColor">#fd75a5</color>
-    <color name="pinkEndColor">#ea1e77</color>
+    <color name="redStartColor">#EF6969</color>
+    <color name="redEndColor">#F64F4F</color>
 
     <!--  Purple Style Gradient-->
-    <color name="purpleStartColor">#f75fe1</color>
-    <color name="purpleEndColor">#c425ec</color>
+    <color name="purpleStartColor">#FD96EE</color>
+    <color name="purpleEndColor">#ECA2FF</color>
 
     <!--  Greeen Style Gradient-->
     <color name="greenStartColor">#b4fa51</color>
     <color name="greenEndColor">#78db29</color>
 
-    <color name="grayStartColor">#A2A2A2</color>
-    <color name="grayEndColor">#FFFFFF</color>
+    <color name="grayStartColor">#FFFFFF</color>
+    <color name="grayEndColor">#25F3EFEF</color>
 
 
 </resources>
