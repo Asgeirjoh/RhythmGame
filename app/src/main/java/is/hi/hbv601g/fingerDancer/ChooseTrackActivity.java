@@ -23,7 +23,7 @@ public class ChooseTrackActivity extends AppCompatActivity {
         RhythmMainActivity.track = track1;
         RhythmMainActivity.notes = notes1;
         RhythmMainActivity.songResId = R.raw.song1;
-        RhythmMainActivity.track.setOffset(5070);
+        RhythmMainActivity.track.setOffset(5140);
         Intent i = new Intent(this,RhythmMainActivity.class);
         startActivity(i);
     }
@@ -34,7 +34,7 @@ public class ChooseTrackActivity extends AppCompatActivity {
         RhythmMainActivity.track = track2;
         RhythmMainActivity.notes = notes2;
         RhythmMainActivity.songResId = R.raw.song2;
-        RhythmMainActivity.track.setOffset(3905);
+        RhythmMainActivity.track.setOffset(3895);
         Intent i = new Intent(this,RhythmMainActivity.class);
         startActivity(i);
     }

@@ -64,7 +64,7 @@ public class RhythmMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rhythm_main);
-        sp = new SoundPool(12, AudioManager.STREAM_MUSIC,0);
+        sp = new SoundPool(24, AudioManager.STREAM_MUSIC,0);
         //song = sp.load(getApplicationContext(), songResId,1);
         sound1 = sp.load(getApplicationContext(), R.raw.hitsound1,1);
         sound6 = sp.load(getApplicationContext(), R.raw.hitsound2,1);
@@ -145,7 +145,7 @@ public class RhythmMainActivity extends AppCompatActivity {
     }
 
     private void startGame() {
-        mediaplayer.start();
+        //mediaplayer.start();
         score = 0;
         combo = 0;
         difficulty = 1;
@@ -297,6 +297,7 @@ public class RhythmMainActivity extends AppCompatActivity {
         };
         long offset = track.getOffset() - Math.round((60*1000*2 / track.getBpm()));
         long period = Math.round(60*1000*4 / track.getBpm());
+        mediaplayer.start();
         timer.scheduleAtFixedRate(timerTask, offset, period);
     }
 
