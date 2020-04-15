@@ -340,6 +340,8 @@ public class RhythmMainActivity extends AppCompatActivity {
         ProgressBar progressbar = findViewById(R.id.lifeBar);
         progressbar.incrementProgressBy(diff);
         lifebar += diff;
+        if (lifebar > 100)
+            lifebar = 100;
     }
 
     public void openMainActivity(View v) {

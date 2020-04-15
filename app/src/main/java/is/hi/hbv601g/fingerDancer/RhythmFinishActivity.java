@@ -24,6 +24,11 @@ public class RhythmFinishActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void playAgain(View v){
+        Intent i = new Intent(this,RhythmMainActivity.class);
+        startActivity(i);
+    }
+
 
 
 
