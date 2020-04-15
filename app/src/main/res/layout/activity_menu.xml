@@ -95,6 +95,20 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@color/blueStartColor"
+
+                android:text="Sign Out"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.091" />
+
+            <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="100dp"
                 android:layout_height="40dp"

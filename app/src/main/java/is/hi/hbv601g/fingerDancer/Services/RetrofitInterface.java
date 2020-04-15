@@ -5,6 +5,7 @@ import java.util.HashMap;
 import is.hi.hbv601g.fingerDancer.Entities.User;
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface RetrofitInterface {
@@ -15,4 +16,10 @@ public interface RetrofitInterface {
     // Post-request calls void and sends name,email and password
     @POST("/signup")
     Call<Void> executeSignup(@Body HashMap<String, String> map);
+
+    @GET("/logout")
+    Call<Void> executeLogout();
+
+    @GET("/usercheck")
+    Call<Void> executeUsercheck();
 }

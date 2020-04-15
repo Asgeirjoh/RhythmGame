@@ -28,6 +28,7 @@ public class MenuActivity extends AppCompatActivity {
     // BASE_URL Leads to local host on computer
     private String BASE_URL = "http://10.0.2.2:3000";
     private Button btnLogin;
+    private Button btnLogout;
     private Button btnSignup;
     private Button btnCreateUser;
     private Button getBtnLogin;
@@ -54,14 +55,35 @@ public class MenuActivity extends AppCompatActivity {
         retrofitInterface = retrofit.create(RetrofitInterface.class);
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
+        btnLogout = (Button) findViewById(R.id.btnLogout);
         btnSignup = (Button) findViewById(R.id.btnSignup);
 
+        btnLogout.setVisibility(View.GONE);
+        checkUser();
 
         // Login Button btnLogin: calls handleLoginDialog()
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 handleLoginDialog();
+            }
+        });
+
+        // Logout Button btnLogout: handles logout
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Call<Void> call = retrofitInterface.executeLogout();
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+                        finish();
+                        startActivity(getIntent());
+                    }
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+                    }
+                });
             }
         });
 
@@ -73,11 +95,12 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+
     }
 
     // Opens Login Dialog and sends login information to server to check if user exists
     private void handleLoginDialog() {
-        View view = getLayoutInflater().inflate(R.layout.login_dialog, null);
+        final View view = getLayoutInflater().inflate(R.layout.login_dialog, null);
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(view).show();
         Button loginBtn = view.findViewById(R.id.login);
@@ -97,11 +120,15 @@ public class MenuActivity extends AppCompatActivity {
                     public void onResponse(Call<User> call, Response<User> response) {
                         // Returns User info when Login info is correct
                         if (response.code() == 200) {
+                            /*
                             User results = response.body();
                             AlertDialog.Builder builder1 = new AlertDialog.Builder(MenuActivity.this);
                             builder1.setTitle(results.getName());
                             builder1.setMessage(results.getEmail());
                             builder1.show();
+                             */
+                            finish();
+                            startActivity(getIntent());
                         }
                         // Returns Toast message if Login info is wrong
                         else if (response.code() == 404) {
@@ -160,6 +187,27 @@ public class MenuActivity extends AppCompatActivity {
                                 Toast.LENGTH_LONG).show();
                     }
                 });
+            }
+        });
+    }
+
+    // Checks if user is online
+    public void checkUser() {
+        Call<Void> call = retrofitInterface.executeUsercheck();
+        call.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                if (response.code() == 200) {
+                    btnLogout.setVisibility(View.VISIBLE);
+                    btnLogin.setVisibility(View.GONE);
+                }
+                else {
+                    btnLogout.setVisibility(View.GONE);
+                    btnLogin.setVisibility(View.VISIBLE);
+                }
+            }
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
             }
         });
     }
