@@ -1,0 +1,322 @@
+[
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_star.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_blue.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\fade_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_white.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\fade_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_highscore.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\layout\\activity_highscore.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_miss.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\fade_miss.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_lightblue.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\fade_lightblue.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_sound7.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\sound7.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_hitsound4x2.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\hitsound4x2.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_pink.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\fade_pink.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_choose_track.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\layout\\activity_choose_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_red.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\fade_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable_buttonthree.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable\\buttonthree.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_instructions.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\layout\\activity_instructions.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_hitsound4.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\hitsound4.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable_left.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable\\left.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_sound1.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\sound1.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable_menubuttons.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable\\menubuttons.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_sound8.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\sound8.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable-xxhdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_star.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable-mdpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_bounce.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\bounce.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_star.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable-xhdpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_sound2.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\sound2.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_hitsound3.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\hitsound3.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_home.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable-mdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_star.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable-xxhdpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_star.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rhythm_main.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\layout\\activity_rhythm_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_sound9.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\sound9.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_green.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\fade_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_home.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable-hdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_soundmiss.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\soundmiss.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable-xhdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable_buttonnode.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable\\buttonnode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ingame_highscore.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\layout\\activity_ingame_highscore.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable_buttoncombo.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable\\buttoncombo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\layout\\activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bstart.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\layout\\activity_bstart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_yellow.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\fade_yellow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_sound5.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\sound5.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button1.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable\\button1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_sound3.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\sound3.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_home.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_song1.mp3.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\song1.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_blink.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\blink.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_song.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\song.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable_buttonlost.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable\\buttonlost.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\font_scorefont.ttf.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\font\\scorefont.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_sound6.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\sound6.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_star.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\drawable-hdpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_hitsound2.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\hitsound2.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_star.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_star.xml"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\raw_hirsound1.wav.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\raw\\hirsound1.wav"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_home.png.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\Son Van\\Downloads\\RhythmGame-aSGEIR22\\RhythmGame-aSGEIR22\\app\\src\\main\\res\\anim\\slide_in_left.xml"
+    }
+]

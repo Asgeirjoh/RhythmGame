@@ -18,8 +18,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HighscoreActivity"></activity>
+        <activity android:name=".HighscoreActivity"/>
+        <activity android:name=".startMenuActivity"/>
         <activity android:name=".settingsActivity" />
+        <activity android:name=".inGameHighScoreActivity"/>
+        <activity android:name=".ChooseTrackActivity"/>
+        <activity android:name=".RhythmMainActivity"/>
+        <activity android:name=".RhythmFinishActivity"/>
         <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
