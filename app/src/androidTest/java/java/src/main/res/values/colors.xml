@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EEEEEE</color>
+    <color name="colorPrimaryDark">#21222c</color>
+    <color name="colorAccent">#D81B60</color>
+
+<!--  Blue Style Gradient-->
+    <color name="blueStartColor">#03A9F4</color>
+    <color name="blueEndColor">#0A7AD3</color>
+
+    <!--  Orange Style Gradient-->
+    <color name="orangeStartColor">#FFF394</color>
+    <color name="orangeEndColor">#FFF306</color>
+
+    <!--  Ping Style Gradient-->
+    <color name="redStartColor">#EF6969</color>
+    <color name="redEndColor">#F64F4F</color>
+
+    <!--  Purple Style Gradient-->
+    <color name="purpleStartColor">#FD96EE</color>
+    <color name="purpleEndColor">#ECA2FF</color>
+
+    <!--  Greeen Style Gradient-->
+    <color name="greenStartColor">#b4fa51</color>
+    <color name="greenEndColor">#78db29</color>
+
+    <color name="grayStartColor">#FFFFFF</color>
+    <color name="grayEndColor">#25F3EFEF</color>
+
+
+</resources>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="btnPlay">Play</string>
+    <string name="btnHighScore">High Score</string>
+    <string name="btnSettings">Settings</string>
+    <string name="btnAddTrack">Add Tracks</string>
+    <string name="backtoMenu">Menu</string>
+    <!-- Strings for SettingsMenu -->
+    <string name="textviewMute">MuteSound </string>
+    <string name="rbtnMuteSound"> Mute Sound</string>
+    <string name="btnChangeTrack"> Change Track</string>
+    <string name="btnInstructions"> Instructions </string>
+
+    <!-- Strings for Login -->
+    <string name="hintUsername">Enter Username</string>
+    <string name="hintPassword">Enter Password</string>
+    <string name="hintEmail">Enter Email Address</string>
+    <string name="btnLogin">Login</string>
+    <string name="lblUsername">User Name </string>
+    <string name="txtUsername"> Enter Username</string>
+    <string name="lblPassword"> Password</string>
+    <string name="txtPassword"> Enter Password </string>
+    <string name="btnCreateAccount"> Create Account </string>
+    <string name="btnSignin">Sign In </string>
+    <string name="btnSignup"> Sign Up </string>
+
+
+    <!-- Strings for Highscore-->
+    <string name="strGlobal">Global</string>
+    <string name="strPersonal">Personal</string>
+    <string name="strname">Name</string>
+    <string name="strScore">Score</string>
+    <string name="strRank">Rank</string>
+    <string name="strLevel">Level</string>
+
+    <!-- Strings for Instructions-->
+    <string name="strInstructions">How to play</string>
+
+    <!-- Strings for BeforePlay -->
+    <string name="strPlay">Play</string>
+    <string name="strChooseTrack">Choose Track</string>
+
+
+    <!-- Strings for ScoreTable -->
+    <string name="strScoreTable">0</string>
+
+    <!-- Strings for instructions -->
+    <string name="initalButton">Start state of button</string>
+    <string name="button1pnt">1 point for pressing</string>
+    <string name="button2pnt">2 point for pressing</string>
+    <string name="button3pnt">3 point for pressing</string>
+    <string name="randomMode">Buttons in random mode</string>
+    <string name="instrRndMode">Tap buttons to gain points, each time a wrong button is
+    pressed your score will be zero</string>
+    <string name="startxt">Shows three best scores</string>
+    <string name="hometxt">Back to main menu</string>
+
+
+
+
+
+</resources>
