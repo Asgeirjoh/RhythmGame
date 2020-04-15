@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grayEndColor"
-    tools:context=".Activities.HighscoreActivity">
+    tools:context=".HighscoreActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/strRank"
-                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textStyle="bold" />
 
                 <TextView
@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/strname"
-                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textStyle="bold" />
 
                 <TextView
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/strScore"
-                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textStyle="bold" />
 
                 <TextView
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/strLevel"
-                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textStyle="bold" />
 
             </TableRow>

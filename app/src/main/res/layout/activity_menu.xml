@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Activities.MenuActivity">
+    tools:context=".MenuActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -124,6 +124,53 @@
 
 
         </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="@string/hintUsername"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="@string/hintPassword"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="@string/hintEmail"
+            android:inputType="textEmailAddress" />
+
+
+        <Button
+            android:id="@+id/btnCreateUser"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blueStartColor"
+            android:gravity="center"
+
+            android:text="@string/btnCreateAccount" />
+
+        <Button
+            android:id="@+id/btnLoginUser"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blueStartColor"
+            android:gravity="center"
+
+            android:text="@string/btnLogin" />
+
 
     </LinearLayout>
 

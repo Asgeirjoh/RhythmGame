@@ -36,4 +36,27 @@
     <!-- Strings for Instructions-->
     <string name="strInstructions">How to play</string>
 
+    <!-- Strings for BeforePlay -->
+    <string name="strPlay">Play</string>
+    <string name="strChooseTrack">Choose Track</string>
+
+
+    <!-- Strings for ScoreTable -->
+    <string name="strScoreTable">0</string>
+
+    <!-- Strings for instructions -->
+    <string name="initalButton">Start state of button</string>
+    <string name="button1pnt">1 point for pressing</string>
+    <string name="button2pnt">2 point for pressing</string>
+    <string name="button3pnt">3 point for pressing</string>
+    <string name="randomMode">Buttons in random mode</string>
+    <string name="instrRndMode">Tap buttons to gain points, each time a wrong button is
+    pressed your score will be zero</string>
+    <string name="startxt">Shows three best scores</string>
+    <string name="hometxt">Back to main menu</string>
+
+
+
+
+
 </resources>
