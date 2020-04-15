@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Button> mbuttons;
 
-    private MediaPlayer mMediaPlayer;
+    public static MediaPlayer mMediaPlayer;
+    public static boolean musicStarted = false;
 
     private int Score = 0;
     private boolean start = true;
@@ -84,7 +85,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mMediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.song);
-        mMediaPlayer.start();
+        if (musicStarted == false) {
+            mMediaPlayer.start();
+            musicStarted = true;
+        }
         mScoreTable = findViewById(R.id.scoreTable);
         mInGameHighScore = findViewById(R.id.inGameHighScore);
 
@@ -386,6 +390,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void backToMenu(View v) {
         mMediaPlayer.stop();
+        musicStarted = false;
         Intent i = new Intent(this, MenuActivity.class);
         startActivity(i);
     }
@@ -393,6 +398,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         mMediaPlayer.stop();
+        musicStarted = false;
         Intent i = new Intent(this, MenuActivity.class);
         startActivity(i);
     }

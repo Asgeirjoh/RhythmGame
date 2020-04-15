@@ -38,7 +38,7 @@ public class RhythmMainActivity extends AppCompatActivity {
     private boolean[] buttonIsActivated = new boolean[12];
     //private NoteButton buttons[] = new NoteButton[12];
 
-    public static int score;
+    public static int score = 0;
     private int combo;
     private int difficulty;
     private int hitAccuracy;
@@ -148,7 +148,7 @@ public class RhythmMainActivity extends AppCompatActivity {
 
     private void startGame() {
         //mediaplayer.start();
-        score = 0;
+        //score = 0;
         combo = 0;
         difficulty = 1;
         hitAccuracy = 500;
@@ -281,7 +281,7 @@ public class RhythmMainActivity extends AppCompatActivity {
                                                         buttonIsActivated[buttonToActivate - 1] = false;
                                                     }
                                                 }
-                                            }, timeTillZero + hitAccuracy);
+                                            }, timeTillZero + hitAccuracy + 400);
                                         }
                                         i++;
                                         j++;
@@ -377,7 +377,6 @@ public class RhythmMainActivity extends AppCompatActivity {
     }
 
     private void endGame() {
-        System.out.println("Game Ended!!!!");
         mediaplayer.stop();
         timer2Cancel = true;
         timer.cancel();
