@@ -18,13 +18,11 @@ import android.widget.CheckBox;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
     private MediaPlayer mediaplayer;
@@ -41,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
     private int sound9x2;
     private int miss;
 
-
     int[] buttons = new int[]{R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6, R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12};
     private boolean[] buttonIsActivated = new boolean[12];
+    //private NoteButton buttons[] = new NoteButton[12];
 
     private int score;
     private int combo;
@@ -51,12 +49,13 @@ public class MainActivity extends AppCompatActivity {
     private int hitAccuracy;
     private int lifebar = 100;
     private int fadeInTime;
-    //private NoteButton buttons[] = new NoteButton[12];
+
     private Track track = new Track("Another Day", 99.0, "r.raw.song1");
+    int[] notes = {1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,1,1,0,0,1,0,0,1,0,1,0,0,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,1,1,1,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0};
+
     private Timer timer = new Timer(false);
     private Timer timer2;
     private boolean timer2Cancel = false;
-    int[] notes = {1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,1,1,0,0,1,0,0,1,0,1,0,0,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,1,1,1,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0};
 
 
 
@@ -70,11 +69,7 @@ public class MainActivity extends AppCompatActivity {
         sp = new SoundPool(12, AudioManager.STREAM_MUSIC,0);
         song = sp.load(getApplicationContext(),R.raw.song1,1);
         sound1 = sp.load(getApplicationContext(),R.raw.sound1,1);
-        sound2 = sp.load(getApplicationContext(),R.raw.sound2,1);
-        //sound3 = sp.load(getApplicationContext(),R.raw.sound3,1);
-        sound5 = sp.load(getApplicationContext(),R.raw.sound5,1);
         sound6 = sp.load(getApplicationContext(),R.raw.sound6,1);
-        sound7 = sp.load(getApplicationContext(),R.raw.sound7,1);
         sound8 = sp.load(getApplicationContext(),R.raw.sound8,1);
         sound9 = sp.load(getApplicationContext(),R.raw.sound9,1);
         sound9x2 = sp.load(getApplicationContext(),R.raw.sound99,1);
@@ -208,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
                                             if (j % 4 == 0 && i >= 0) {
                                                 if (j % 8 == 0) {
                                                     sp.play(sound8, 0.6f, 0.6f, 1, 0, 1);
-                                                    sp.play(sound1, 0.15f, 0.15f, 1, 0, 1);
+                                                    sp.play(sound1, 0.20f, 0.20f, 1, 0, 1);
                                                 }
                                                 else {
                                                     sp.play(sound8, 0.35f, 0.35f, 1, 0, 1);
@@ -304,15 +299,15 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         long offset = track.getOffset() - Math.round((60*1000*2 / track.getBpm()));
-        System.out.println(offset);
         long period = Math.round(60*1000*4 / track.getBpm());
         timer.scheduleAtFixedRate(timerTask, offset, period);
-
     }
+
+
 
     private void miss() {
         combo = 0;
-        lifebarIncrement(-5);
+        lifebarIncrement(-7);
     }
 
     private void updateScore() {
@@ -365,74 +360,6 @@ public class MainActivity extends AppCompatActivity {
         timer.cancel();
         Intent i = new Intent(this,MenuActivity.class);
         startActivity(i);
-    }
-
-    public void tapOnButton(View v){
-        //Button button = (Button) findViewById(R.id.button2);
-        //Animation animation = AnimationUtils.loadAnimation(this, R.anim.fade_white);
-        //button.startAnimation(animation);
-        if (buttonIsActivated[0]) {
-            score += 100;
-        }
-        System.out.println(score);
-    }
-
-    public void playsound1(View v){
-        sp.play(sound1,1.0f,1.0f,1,1,10f);
-    }
-
-    public void playsound2(View v){
-        sp.play(sound2,1.0f,1.0f,1,1,10f);
-    }
-
-    public void playsound3(View v){
-        sp.play(sound3,1.0f,1.0f,1,1,10f);
-
-    }
-
-    public void playsound4(View v){
-        sp.play(sound3,1.0f,1.0f,1,1,10f);
-
-    }
-
-    public void playsound5(View v){
-        sp.play(sound5,1.0f,1.0f,1,1,10f);
-
-    }
-
-    public void playsound6(View v){
-        sp.play(sound6,1.0f,1.0f,1,1,10f);
-
-    }
-
-    public void playsound7(View v){
-        sp.play(sound7,1.0f,1.0f,1,1,10f);
-
-    }
-
-    public void playsound8(View v){
-        sp.play(sound8,1.0f,1.0f,1,1,10f);
-
-    }
-
-    public void playsound9(View v){
-        sp.play(sound9,1.0f,1.0f,1,1,10f);
-
-    }
-
-    public void playsound10(View v){
-        sp.play(sound1,1.0f,1.0f,1,1,10f);
-
-    }
-
-    public void playsound11(View v){
-        sp.play(sound1,1.0f,1.0f,1,1,10f);
-
-    }
-
-    public void playsound12(View v){
-        sp.play(sound1,1.0f,1.0f,1,1,10f);
-
     }
 
     public void checkBoxMusic(View v){
