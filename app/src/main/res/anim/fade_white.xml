@@ -13,7 +13,7 @@
         android:propertyName="backgroundColor"
         android:valueFrom="#222"
         android:valueTo="#333"
-        android:duration="150"
+        android:duration="250"
         />
 
 

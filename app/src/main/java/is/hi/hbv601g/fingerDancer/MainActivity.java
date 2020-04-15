@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mMediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.song);
+        mMediaPlayer.start();
         mScoreTable = findViewById(R.id.scoreTable);
         mInGameHighScore = findViewById(R.id.inGameHighScore);
 
@@ -384,7 +385,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void backToMenu(View v) {
+        mMediaPlayer.stop();
+        Intent i = new Intent(this, MenuActivity.class);
+        startActivity(i);
+    }
 
+    @Override
+    public void onBackPressed() {
+        mMediaPlayer.stop();
         Intent i = new Intent(this, MenuActivity.class);
         startActivity(i);
     }

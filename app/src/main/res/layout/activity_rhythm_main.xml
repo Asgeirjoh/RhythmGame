@@ -129,7 +129,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="#333"
-                    android:onClick="playsound1" />
+                    android:radius="15dp" />
 
                 <Button
                     android:id="@+id/button2"
@@ -138,7 +138,6 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="#333"
-                    android:onClick="tapOnButton"
                     android:radius="20dp" />
 
                 <Button
@@ -147,8 +146,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound3" />
+                    android:background="#333" />
             </TableRow>
 
             <TableRow
@@ -162,8 +160,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound1" />
+                    android:background="#333" />
 
                 <Button
                     android:id="@+id/button5"
@@ -171,8 +168,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound2" />
+                    android:background="#333" />
 
                 <Button
                     android:id="@+id/button6"
@@ -180,8 +176,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound3" />
+                    android:background="#333" />
             </TableRow>
 
             <TableRow
@@ -195,8 +190,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound1" />
+                    android:background="#333" />
 
                 <Button
                     android:id="@+id/button8"
@@ -204,8 +198,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound2" />
+                    android:background="#333" />
 
                 <Button
                     android:id="@+id/button9"
@@ -213,8 +206,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound3" />
+                    android:background="#333" />
             </TableRow>
 
             <TableRow
@@ -228,8 +220,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound1" />
+                    android:background="#333" />
 
                 <Button
                     android:id="@+id/button11"
@@ -237,8 +228,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound2" />
+                    android:background="#333" />
 
                 <Button
                     android:id="@+id/button12"
@@ -246,8 +236,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="#333"
-                    android:onClick="playsound3" />
+                    android:background="#333" />
             </TableRow>
         </TableLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

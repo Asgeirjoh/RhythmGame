@@ -66,7 +66,7 @@ public class RhythmMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rhythm_main);
         sp = new SoundPool(12, AudioManager.STREAM_MUSIC,0);
         song = sp.load(getApplicationContext(), R.raw.song1,1);
-        sound1 = sp.load(getApplicationContext(), R.raw.hirsound1,1);
+        sound1 = sp.load(getApplicationContext(), R.raw.hitsound1,1);
         sound6 = sp.load(getApplicationContext(), R.raw.hitsound2,1);
         sound8 = sp.load(getApplicationContext(), R.raw.hitsound3,1);
         sound9 = sp.load(getApplicationContext(), R.raw.hitsound4,1);
