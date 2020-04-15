@@ -1,5 +1,6 @@
 package is.hi.hbv601g.fingerDancer;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -69,6 +70,12 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+    public void playGame(View v) {
+        Intent i = new Intent(this, startMenuActivity.class);
+        startActivity(i);
+
+    }
+
     public void viewSettings(View v) {
         Intent i = new Intent(this, settingsActivity.class);
         startActivity(i);
@@ -76,11 +83,6 @@ public class MenuActivity extends AppCompatActivity {
 
     public void viewHighScore(View v){
         Intent i = new Intent(this,HighscoreActivity.class);
-        startActivity(i);
-    }
-
-    public void openMainActivity(View v) {
-        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 
