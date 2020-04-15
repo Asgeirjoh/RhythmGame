@@ -1,4 +1,4 @@
-package is.hi.hbv601g.fingerDancer.Activities;
+package is.hi.hbv601g.fingerDancer;
 
 import android.content.Intent;
 import android.os.Bundle;

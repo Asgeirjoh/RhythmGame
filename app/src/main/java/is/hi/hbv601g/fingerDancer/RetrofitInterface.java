@@ -1,8 +1,8 @@
-package is.hi.hbv601g.fingerDancer.Services;
+package is.hi.hbv601g.fingerDancer;
 
 import java.util.HashMap;
 
-import is.hi.hbv601g.fingerDancer.Entities.User;
+import is.hi.hbv601g.fingerDancer.User;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;

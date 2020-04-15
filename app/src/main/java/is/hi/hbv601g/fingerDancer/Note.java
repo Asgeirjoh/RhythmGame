@@ -1,4 +1,4 @@
-package is.hi.hbv601g.fingerDancer.Entities;
+package is.hi.hbv601g.fingerDancer;
 
 public class Note {
     private boolean shouldPress;

@@ -1,4 +1,4 @@
-package is.hi.hbv601g.fingerDancer.Activities;
+package is.hi.hbv601g.fingerDancer;
 
 import android.content.Intent;
 import android.media.AudioManager;
@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import is.hi.hbv601g.fingerDancer.R;
 
 public class MainActivity extends AppCompatActivity {
     private SoundPool sp;
