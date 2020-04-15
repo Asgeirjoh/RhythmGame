@@ -22,6 +22,7 @@
         <activity android:name=".inGameHighScoreActivity"/>
         <activity android:name=".ChooseTrackActivity"/>
         <activity android:name=".RhythmMainActivity"/>
+        <activity android:name=".RhythmFinishActivity"/>
         <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

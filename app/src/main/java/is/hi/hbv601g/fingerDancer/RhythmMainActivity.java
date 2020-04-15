@@ -32,12 +32,13 @@ public class RhythmMainActivity extends AppCompatActivity {
     private int sound9;
     private int sound9x2;
     private int miss;
+    private int failsound;
 
     int[] buttons = new int[]{R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6, R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12};
     private boolean[] buttonIsActivated = new boolean[12];
     //private NoteButton buttons[] = new NoteButton[12];
 
-    private int score;
+    public static int score;
     private int combo;
     private int difficulty;
     private int hitAccuracy;
@@ -72,6 +73,7 @@ public class RhythmMainActivity extends AppCompatActivity {
         sound9 = sp.load(getApplicationContext(), R.raw.hitsound4,1);
         sound9x2 = sp.load(getApplicationContext(), R.raw.hitsound4x2,1);
         miss = sp.load(getApplicationContext(), R.raw.soundmiss,1);
+        failsound = sp.load(getApplicationContext(), R.raw.failsound,1);
         mediaplayer = MediaPlayer.create(this, songResId);
 
         int lastNote1 = 0;
@@ -319,14 +321,16 @@ public class RhythmMainActivity extends AppCompatActivity {
     }
 
     private void startLifebar() {
-        Timer lifebarTimer = new Timer();
+        final Timer lifebarTimer = new Timer();
         lifebarTimer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
                 lifebarIncrement(-1);
                 if (lifebar <= 0) {
                     System.out.println("Game lost!");
+                    sp.play(failsound, 1.0f, 1.0f, 1, 0, 1);
                     endGame();
+                    lifebarTimer.cancel();
                 }
             }
         }, 0, 100);
@@ -372,7 +376,11 @@ public class RhythmMainActivity extends AppCompatActivity {
 
     private void endGame() {
         System.out.println("Game Ended!!!!");
+        mediaplayer.stop();
+        timer2Cancel = true;
+        timer.cancel();
+        Intent i = new Intent(this, RhythmFinishActivity.class);
+        startActivity(i);
     }
-
 
 }
