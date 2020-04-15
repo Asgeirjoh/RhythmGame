@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import is.hi.hbv601g.fingerDancer.R;
 
-public class SettingsActivity extends AppCompatActivity {
+public class settingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

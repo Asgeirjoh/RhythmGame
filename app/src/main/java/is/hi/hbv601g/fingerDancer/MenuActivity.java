@@ -218,7 +218,7 @@ public class MenuActivity extends AppCompatActivity {
 
     // Starts SettingsActivity, function called by Settings Button: btnSettings in activity_menu.xml
     public void viewSettings(View v) {
-        Intent i = new Intent(this, SettingsActivity.class);
+        Intent i = new Intent(this, settingsActivity.class);
         startActivity(i);
     }
 
