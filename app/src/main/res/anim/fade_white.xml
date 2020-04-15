@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator
+        android:propertyName="backgroundColor"
+        android:valueFrom="#FFF"
+        android:valueTo="#333"
+        android:duration="250"
+        />
+
+    <objectAnimator
+        android:startOffset="250"
+        android:propertyName="backgroundColor"
+        android:valueFrom="#222"
+        android:valueTo="#333"
+        android:duration="150"
+        />
+
+
+
+</set>
