@@ -179,7 +179,7 @@ public class RhythmMainActivity extends AppCompatActivity {
                                     public void run() {
                                         if (i >= notes.length) {
                                             System.out.println("Song finished!");
-                                            //finishGame();
+                                            endGame();
                                         }
                                         if (i < 0) {
                                             if (j % 2 == 0) {
@@ -326,7 +326,7 @@ public class RhythmMainActivity extends AppCompatActivity {
                 lifebarIncrement(-1);
                 if (lifebar <= 0) {
                     System.out.println("Game lost!");
-                    //finishGame();
+                    endGame();
                 }
             }
         }, 0, 100);
@@ -368,6 +368,10 @@ public class RhythmMainActivity extends AppCompatActivity {
         else {
             mediaplayer.setVolume(1.0f, 1.0f);
         }
+    }
+
+    private void endGame() {
+        System.out.println("Game Ended!!!!");
     }
 
 
