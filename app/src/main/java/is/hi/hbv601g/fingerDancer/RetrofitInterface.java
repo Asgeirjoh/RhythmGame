@@ -12,14 +12,19 @@ public interface RetrofitInterface {
     // Post-request calls user object and sends name and password
     @POST("/login")
     Call<User> executeLogin(@Body HashMap<String, String> map);
-
     // Post-request calls void and sends name,email and password
     @POST("/signup")
     Call<Void> executeSignup(@Body HashMap<String, String> map);
-
+    // Logs user out
     @GET("/logout")
     Call<Void> executeLogout();
-
+    // Checks if user is online
     @GET("/usercheck")
-    Call<Void> executeUsercheck();
+    Call<Void> executeUserCheck();
+    // Saves Entity-SavedScore to database
+    @POST("/savescore")
+    Call<Void> executeSaveScore(@Body HashMap<String, String> map);
+    // Gets SavedScore from database
+    @GET("/getscore")
+    Call<SavedScore> executeGetScore(@Body HashMap<String, String> map);
 }

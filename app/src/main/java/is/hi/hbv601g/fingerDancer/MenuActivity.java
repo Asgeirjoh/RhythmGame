@@ -191,7 +191,7 @@ public class MenuActivity extends AppCompatActivity {
 
     // Checks if user is online
     public void checkUser() {
-        Call<Void> call = retrofitInterface.executeUsercheck();
+        Call<Void> call = retrofitInterface.executeUserCheck();
         call.enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
