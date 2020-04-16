@@ -66,10 +66,12 @@ public class inGameHighScoreActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        MainActivity.musicStarted = true;
         Intent i = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(i);
         finish();
     }
+
 }
 
 

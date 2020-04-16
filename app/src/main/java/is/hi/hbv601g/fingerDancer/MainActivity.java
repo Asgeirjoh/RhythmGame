@@ -393,6 +393,7 @@ public class MainActivity extends AppCompatActivity {
         musicStarted = false;
         Intent i = new Intent(this, MenuActivity.class);
         startActivity(i);
+        finish();
     }
 
     @Override
@@ -401,6 +402,7 @@ public class MainActivity extends AppCompatActivity {
         musicStarted = false;
         Intent i = new Intent(this, MenuActivity.class);
         startActivity(i);
+        finish();
     }
 
     public void playSong(View v) {

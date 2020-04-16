@@ -13,9 +13,4 @@ public class HighscoreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_highscore);
     }
 
-    public void onBackPressed() {
-        MainActivity.musicStarted = true;
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
-    }
 }

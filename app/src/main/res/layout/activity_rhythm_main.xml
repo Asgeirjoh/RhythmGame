@@ -15,11 +15,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="252dp"
+            android:layout_marginLeft="252dp"
+            android:layout_marginBottom="4dp"
+            android:text="Music Volume:"
+            android:textColor="#CCC"
+            app:layout_constraintBottom_toTopOf="@+id/seekBarMusic"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMusic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:buttonTint="#CCC"
+            android:onClick="checkBoxAutoPlay"
+            android:text="Auto Play"
+            android:textColor="#CCC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ProgressBar
             android:id="@+id/lifeBar"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="357dp"
-            android:layout_height="27dp"
+            android:layout_width="377dp"
+            android:layout_height="28dp"
             android:layout_marginTop="92dp"
             android:minHeight="50dp"
             android:progress="100"
@@ -32,9 +56,9 @@
             android:id="@+id/comboView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="248dp"
-            android:layout_marginLeft="248dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="28dp"
             android:gravity="start"
             android:text="0"
             android:textAlignment="viewStart"
@@ -51,7 +75,7 @@
             android:text="Combo: "
             android:textColor="#CCC"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.539"
+            app:layout_constraintHorizontal_bias="0.41"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,7 +87,7 @@
             android:text="Score: "
             android:textColor="#CCC"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintHorizontal_bias="0.398"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,9 +95,9 @@
             android:id="@+id/scoreView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="248dp"
-            android:layout_marginLeft="248dp"
-            android:layout_marginTop="64dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="60dp"
             android:gravity="start"
             android:text="0"
             android:textAlignment="viewStart"
@@ -82,22 +106,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <CheckBox
-            android:id="@+id/checkBoxMusic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:buttonTint="#CCC"
-            android:onClick="checkBoxMusic"
-            android:text="Music Off"
-            android:textColor="#CCC"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <Button
             android:id="@+id/btnBackToMenu"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_width="112dp"
+            android:layout_height="45dp"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="32dp"
             android:background="#999"
@@ -105,7 +117,7 @@
             android:text="@string/backtoMenu"
             app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintHorizontal_bias="0.025"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -239,5 +251,18 @@
                     android:background="#333" />
             </TableRow>
         </TableLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarMusic"
+            android:layout_width="155dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="36dp"
+            android:progress="100"
+            android:progressTint="#DDD"
+            android:thumbTint="#FF5555"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ProgressBar;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -44,6 +45,7 @@ public class RhythmMainActivity extends AppCompatActivity {
     private int hitAccuracy;
     private int lifebar = 100;
     private int fadeInTime;
+    private boolean autoPlayOn = false;
 
     public static Track track;
     public static int songResId;
@@ -56,6 +58,8 @@ public class RhythmMainActivity extends AppCompatActivity {
     private Timer timer2;
     private Timer lifebarTimer;
     private boolean timer2Cancel = false;
+
+    SeekBar seekbar;
 
 
 
@@ -76,6 +80,27 @@ public class RhythmMainActivity extends AppCompatActivity {
         miss = sp.load(getApplicationContext(), R.raw.soundmiss,1);
         failsound = sp.load(getApplicationContext(), R.raw.failsound,1);
         mediaplayer = MediaPlayer.create(this, songResId);
+
+        seekbar = findViewById(R.id.seekBarMusic);
+        seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                System.out.println(progress);
+                double d = progress/100.0;
+                float f = (float) d;
+                mediaplayer.setVolume(f, f);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
 
         int lastNote1 = 0;
         int lastNote2 = 0;
@@ -120,9 +145,7 @@ public class RhythmMainActivity extends AppCompatActivity {
                 public boolean onTouch(View v, MotionEvent event) {
                     if (event.getAction() == MotionEvent.ACTION_DOWN) {
                         if (buttonIsActivated[finalI]) {
-                            lifebarIncrement(10);
-                            score += 100 * (1 + combo * 0.20);
-                            combo += 1;
+                            hit();
                             buttonIsActivated[finalI] = false;
                         }
                         else {
@@ -132,8 +155,6 @@ public class RhythmMainActivity extends AppCompatActivity {
                             set.setTarget(findViewById(buttons[finalI]));
                             set.start();
                         }
-                        updateScore();
-                        updateCombo();
                         return true;
                     }
                     return false;
@@ -225,6 +246,9 @@ public class RhythmMainActivity extends AppCompatActivity {
                                             else if (notes[i] == 11) set.setTarget(findViewById(R.id.button11));
                                             else set.setTarget(findViewById(R.id.button12));
                                             set.start();
+                                            if (autoPlayOn) {
+                                                hit();
+                                            }
                                             //Animation animation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.fade_white);
                                             //animation.setTarget(findViewById(R.id.button11));
                                             //button.startAnimation(animation);
@@ -277,8 +301,10 @@ public class RhythmMainActivity extends AppCompatActivity {
                                                 @Override
                                                 public void run() {
                                                     if (buttonIsActivated[buttonToActivate-1] == true) {
-                                                        miss();
-                                                        updateCombo();
+                                                        if (autoPlayOn == false) {
+                                                            miss();
+                                                            updateCombo();
+                                                        }
                                                         buttonIsActivated[buttonToActivate - 1] = false;
                                                     }
                                                 }
@@ -309,6 +335,16 @@ public class RhythmMainActivity extends AppCompatActivity {
     private void miss() {
         combo = 0;
         lifebarIncrement(-7);
+        updateScore();
+        updateCombo();
+    }
+
+    private void hit() {
+        lifebarIncrement(10);
+        score += 100 * (1 + combo * 0.20);
+        combo += 1;
+        updateScore();
+        updateCombo();
     }
 
     private void updateScore() {
@@ -369,13 +405,14 @@ public class RhythmMainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void checkBoxMusic(View v){
+
+    public void checkBoxAutoPlay(View v) {
         CheckBox checkBox = (CheckBox)v;
         if (checkBox.isChecked()) {
-            mediaplayer.setVolume(0.0f, 0.0f);
+            autoPlayOn = true;
         }
         else {
-            mediaplayer.setVolume(1.0f, 1.0f);
+            autoPlayOn = false;
         }
     }
 
@@ -386,5 +423,16 @@ public class RhythmMainActivity extends AppCompatActivity {
         Intent i = new Intent(this, RhythmFinishActivity.class);
         startActivity(i);
     }
+
+    /*
+    public void checkBoxMusic(View v) {
+        CheckBox checkBox = (CheckBox)v;
+        if (checkBox.isChecked()) {
+            mediaplayer.setVolume(0.0f, 0.0f);
+        }
+        else {
+            mediaplayer.setVolume(1.0f, 1.0f);
+        }
+    }*/
 
 }
