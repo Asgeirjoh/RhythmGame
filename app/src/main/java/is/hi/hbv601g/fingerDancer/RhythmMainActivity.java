@@ -170,7 +170,7 @@ public class RhythmMainActivity extends AppCompatActivity {
 
     private void startGame() {
         //mediaplayer.start();
-        //score = 0;
+        score = 0;
         combo = 0;
         difficulty = 1;
         hitAccuracy = 500;
@@ -201,7 +201,7 @@ public class RhythmMainActivity extends AppCompatActivity {
                                     @SuppressLint("ResourceType")
                                     @Override
                                     public void run() {
-                                        if (i >= notes.length) {
+                                        if (i >= notes.length-4) {
                                             System.out.println("Song finished!");
                                             endGame();
                                         }
